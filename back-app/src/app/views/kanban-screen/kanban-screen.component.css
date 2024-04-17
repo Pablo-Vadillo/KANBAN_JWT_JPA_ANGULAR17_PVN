@@ -1,0 +1,148 @@
+/* Estilos para el encabezado */
+.header {
+    background-color: #283044;
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .header:hover {
+    background-color: #78A1BB;
+  }
+  
+  .logout-btn {
+    background-color: #BFA89E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: inherit; /* Hereda la fuente del encabezado */
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+  }
+  
+  .header .logout-btn:hover {
+    background-color: #8B786D;
+  }
+  
+  /* Estilos para el contenedor principal */
+  .container {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 220px; /* Ajusta el margen izquierdo para la barra lateral */
+    margin-right: 20px;
+  }
+  
+  /* Estilos para la barra lateral */
+  .sidebar {
+    background-color: #EBF5EE;
+    width: 200px;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    font-family: inherit; /* Hereda la fuente del encabezado */
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 2; /* Asegura que la barra lateral esté por encima del contenido */
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #283044;
+    font-weight: bold;
+  }
+  
+  /* Estilos para el contenido */
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Estilos para las listas del kanban */
+  .list {
+    margin-right: 20px; /* Espacio entre las listas */
+  }
+  
+  .list-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para las tarjetas del kanban */
+  .kanban-item {
+    background-color: #EBF5EE;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .kanban-item:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Estilos para los formularios */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #283044;
+    font-family: inherit; /* Hereda la fuente del encabezado */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #78A1BB;
+  }
+  
+  /* Estilos para los botones */
+  .btn-add-task {
+    background-color: #78A1BB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+  }
+  
+  .btn-add-task:hover {
+    background-color: #8B786D;
+  }
+  

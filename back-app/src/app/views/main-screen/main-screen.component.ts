@@ -32,8 +32,8 @@ export class MainScreenComponent {
     this.router.navigate(['/login']);
   }
 
-  moveUserDetail(){
-    this.router.navigate(['/userDetails']);
+  moveToUserInfo(){
+    this.router.navigate(['/userInfo']);
   }
 
   moveKanbanScreen(){

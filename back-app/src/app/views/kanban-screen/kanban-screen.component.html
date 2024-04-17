@@ -1,1 +1,36 @@
-<p>kanban-screen works!</p>
+<div class="header">
+    <span>KanbanBasic</span>
+    <button (click)="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a (click)="moveToUserInfo()">Detalles Usuario</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="list" cdkDropList *ngFor="let list of lists" [cdkDropListData]="list.items" (cdkDropListDropped)="drop($event)">
+            <div class="list-title">{{ list.name }}</div>
+            <div class="kanban-board">
+                <div class="kanban-item" *ngFor="let item of list.items" cdkDrag [cdkDragData]="item">
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description }}</p>
+                    <button (click)="selectTask(item)" class="select-task-btn">Seleccionar</button>
+                </div>
+            </div>
+            <form *ngIf="selectedTask">
+                <div class="form-group">
+                    <label for="taskName">Nombre de la tarea:</label>
+                    <input type="text" id="taskName" name="taskName" required [(ngModel)]="selectedTask.title">
+                </div>
+                <div class="form-group">
+                    <label for="taskDescription">Descripción:</label>
+                    <textarea id="taskDescription" name="taskDescription" required [(ngModel)]="selectedTask.description"></textarea>
+                </div>
+                <button type="button" (click)="addTask(list)" class="btn-add-task">Agregar Tarea</button>
+            </form>
+        </div>
+    </div>
+</div>
