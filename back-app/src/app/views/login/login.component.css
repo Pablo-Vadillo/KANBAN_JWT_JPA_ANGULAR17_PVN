@@ -1,0 +1,86 @@
+.header {
+    background-color: #283044;
+    color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header:hover {
+    background-color: #78A1BB;
+  }
+  
+  .login-container {
+    background-color: #EBF5EE;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px; 
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center; 
+    transition: transform 0.3s ease;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+
+  
+  
+  .login-container:hover {
+    transform: scale(1.05);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #283044;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    display: block;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #78A1BB;
+  }
+  
+  .btn-login, .btn-register {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .btn-login {
+    background-color: #78A1BB;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .btn-register {
+    background-color: #BFA89E;
+    color: white;
+  }
+  
+  .btn-login:hover, .btn-register:hover {
+    background-color: #8B786D;
+    transform: scale(1.05);
+  }
+
+  
+  
